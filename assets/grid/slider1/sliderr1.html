@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .slider{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .slides{
+            display: flex;
+            overflow-x: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+        <a href="#slide_1">1</a>
+        <a href="#slide_2">2</a>
+        <a href="#slide_3">3</a>
+        <a href="#slide_4">4</a>
+      <div class="slides">
+        <div id="slide_1">1</div>
+        <div id="slide_1">2</div>
+        <div id="slide_1">3</div>
+        <div id="slide_1">4</div>
+      </div>
+    </div>
+  </body>
+</html>
