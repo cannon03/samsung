@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .slide_container {
+      width: 800px;
+      height: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      text-align: center;
+    }
+    .img_container {
+      width: 2052px;
+      height: 600px;
+      position: relative;
+      transition: left 2s;
+    }
+    .slider_img {
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    .button_container {
+      top: -20px;
+      position: relative;
+    }
+    .slider_button {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      background-color: white;
+    }
+    #sl_img_1:target ~ .img_container {
+      left: 0px;
+    }
+    #sl_img_2:target ~ .img_container {
+      left: 684px;
+    }
+    #sl_img_3:target ~ .img_container {
+      left: 684px;
+    }
+  </style>
+  <body>
+    <div class="slide_container">
+      <span id="sl_img_1"></span>
+      <span id="sl_img_2"></span>
+      <span id="sl_img_3"></span>
+      <div class="img_container" id="img_cont">
+        <img class="slider_img" src="../galaxy/pl_big.avif" alt="" />
+        <img class="slider_img" src="../appliances/pl_big.avif" alt="" />
+        <img class="slider_img" src="../galaxy/pl_big.avif" alt="" />
+      </div>
+      <div class="button_container">
+        <a href="#sl_img_1" class="slider_button"></a>
+        <a href="#sl_img_2" class="slider_button"></a>
+        <a href="#sl_img_3" class="slider_button"></a>
+      </div>
+    </div>
+  </body>
+</html>
